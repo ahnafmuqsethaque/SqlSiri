@@ -1,35 +1,46 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-      <Card sx={{ maxWidth: 275, backgroundColor: "pink" }}>
+      <Card sx={{ minWidth: 450, minHeight: 350, backgroundColor: "#5C3D2E" }}>
         <CardContent>
           <Stack
             spacing={2}
             direction="column"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <Avatar alt="Doge" src="../assets/doge.jpeg" />
+            <Avatar
+            alt= {props.name}
+            src= {props.image}
+            sx={{ width: 100, height: 100 }}
+            />
+
             <Typography
-              sx={{ fontSize: 14 }}
-              color="text.secondary"
+              sx={{ fontSize: 36, font: "Lato" }}
+              color="#E0C097"
               gutterBottom
             >
-              NAME
+              {props.name}
             </Typography>
             <Typography
               sx={{ fontSize: 14 }}
-              color="text.secondary"
+              color="#E0C097"
               gutterBottom
             >
-              Details here
+              {props.school}
+            </Typography>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="#E0C097"
+              gutterBottom
+            >
+              {props.major}
             </Typography>
           </Stack>
         </CardContent>
