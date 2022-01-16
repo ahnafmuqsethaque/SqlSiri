@@ -4,6 +4,8 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 const About = () => {
+
+    
   return (
     <div>
       <Stack
@@ -24,7 +26,7 @@ const About = () => {
             direction="row"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <Profile />
+            <Profile /> 
             <Profile />
           </Stack>
           <Stack
