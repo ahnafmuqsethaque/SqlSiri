@@ -2,8 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import Image from "../assets/istockphoto.jpg";
-import Image1 from "../assets/doge.jpeg";
+import {ahnaf, tabreek, ngoc, Image} from "../assets";
 
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
         direction="column"
         style={{ justifyContent: "center", alignItems: "center" }}
       >
-        <Typography sx={{ fontSize: 50 }} color="#B85C38" gutterBottom>
+        <Typography sx={{ fontSize: 56 }} color="#B85C38" gutterBottom>
           ABOUT US
         </Typography>
         <Stack
@@ -27,20 +26,20 @@ const About = () => {
             direction="row"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <Profile name = "Ngoc" image = {Image1}/>
-            <Profile name = "Tabreek" image = {Image}/>
+            <Profile name = "Ngoc" image = {ngoc} school = "University of British Columbia" major = "Computer Science + Statistics"/>
+            <Profile name = "Tabreek" image = {tabreek} school = "University of British Columbia" major = "Computer Science"/>
           </Stack>
           <Stack
             spacing={5}
             direction="row"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <Profile name = "Ahnaf"/>
-            <Profile name = "Kishor"/>
+            <Profile name = "Ahnaf" image = {ahnaf} school = "University of British Columbia" major = "Computer Science + Statistics"/>
+            <Profile name = "Kishor" image = {Image} school = "University of Waterloo" major = "Mathematics"/>
           </Stack>
         </Stack>
 
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 14 }} color="#2D2424" gutterBottom>
           footer notes/details
         </Typography>
       </Stack>

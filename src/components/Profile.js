@@ -8,7 +8,7 @@ import Stack from "@mui/material/Stack";
 const Profile = (props) => {
   return (
     <div>
-      <Card sx={{ minWidth: 450, minHeight: 450, backgroundColor: "#5C3D2E" }}>
+      <Card sx={{ minWidth: 450, minHeight: 350, backgroundColor: "#5C3D2E" }}>
         <CardContent>
           <Stack
             spacing={2}
@@ -22,7 +22,7 @@ const Profile = (props) => {
             />
 
             <Typography
-              sx={{ fontSize: 16, font: "Lato" }}
+              sx={{ fontSize: 36, font: "Lato" }}
               color="#E0C097"
               gutterBottom
             >
@@ -33,7 +33,14 @@ const Profile = (props) => {
               color="#E0C097"
               gutterBottom
             >
-              {props.detail}
+              {props.school}
+            </Typography>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="#E0C097"
+              gutterBottom
+            >
+              {props.major}
             </Typography>
           </Stack>
         </CardContent>
