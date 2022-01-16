@@ -2,38 +2,41 @@ import React from "react";
 import Profile from "./Profile";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import Image from "../assets/istockphoto.jpg";
+import Image1 from "../assets/doge.jpeg";
+
 
 const About = () => {
   return (
-    <div>
+    <div style={{backgroundColor: "#2D2424"}}>
       <Stack
-        spacing={2}
+        spacing={5}
         direction="column"
         style={{ justifyContent: "center", alignItems: "center" }}
       >
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          ABOUT SECTION
+        <Typography sx={{ fontSize: 50 }} color="#B85C38" gutterBottom>
+          ABOUT US
         </Typography>
         <Stack
-          spacing={2}
+          spacing={5}
           direction="column"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
           <Stack
-            spacing={2}
+            spacing={5}
             direction="row"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <Profile />
-            <Profile />
+            <Profile name = "Ngoc" image = {Image1}/>
+            <Profile name = "Tabreek" image = {Image}/>
           </Stack>
           <Stack
-            spacing={2}
+            spacing={5}
             direction="row"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <Profile />
-            <Profile />
+            <Profile name = "Ahnaf"/>
+            <Profile name = "Kishor"/>
           </Stack>
         </Stack>
 
