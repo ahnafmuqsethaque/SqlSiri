@@ -28,6 +28,8 @@ const FileUpload = () => {
     //     console.log("error")
     // })
     try {
+      //API call to backend
+      //end point: http:localhost:5000/upload"
       const res = await axios.post("/upload", data, {
         headers: {
           "Content-Type": "multipart/form-data",
