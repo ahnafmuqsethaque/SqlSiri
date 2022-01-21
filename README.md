@@ -1,7 +1,7 @@
 # SqlSiri
 A web based SQL learning platform that utilizes voice recognition to run SQL statements
 
-##Project description:
+## Project description:
 
 *Problem:* Data querying and databases are becoming more widely used in a variety of different fields. However, not everyone is able to access databases via typing code due to mobility issues.
 
