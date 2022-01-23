@@ -12,7 +12,7 @@ options = {
 }
 PythonShell.run('query.py', options, function (err, results) {
     if (err) throw err;
-    // results is an array consisting of messages collected during execution
+    // results is an array consisting of messages collected during executio
     console.log('results: %j', results[0]);
   });
 
